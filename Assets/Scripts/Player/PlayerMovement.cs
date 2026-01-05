@@ -57,6 +57,8 @@ public class PlayerMovement : MonoBehaviour
             {
                 rb.AddForce(transform.up * _jumpForce);
             }
+            
+            
 
             //animaciones
             anim.SetFloat("Velocity X", Mathf.Abs(rb.velocity.x));

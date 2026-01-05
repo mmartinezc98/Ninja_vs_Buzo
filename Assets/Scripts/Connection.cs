@@ -6,7 +6,7 @@ using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 
-public class Connection : MonoBehaviour
+public class Connection : MonoBehaviourPunCallbacks
 {
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ public class Connection : MonoBehaviour
    
 
     //PARA CONECTARSE AL MASTER Y VERIFICARLO
-    public void OnConnectedToMaster()
+    public override void OnConnectedToMaster()
     {
         Debug.Log("Conectando al master");
     }
@@ -33,7 +33,7 @@ public class Connection : MonoBehaviour
     }
 
     //CONEXION A UNA SALA
-    public void OnJoinedRoom()
+    public override void OnJoinedRoom()
     {
         Debug.Log("Conectado a la sala" + PhotonNetwork.CurrentRoom.Name); //indica a que sala te has conectado
         Debug.Log("Jugadores conectados: " + PhotonNetwork.CurrentRoom.PlayerCount); //indica los jugadores que hay conectados

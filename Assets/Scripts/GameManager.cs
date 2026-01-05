@@ -8,9 +8,10 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         if (PhotonNetwork.IsMasterClient)
         {
-            PhotonNetwork.Instantiate("Rana", new Vector3(-2.33250046f, -0.327192903f, 0), Quaternion.identity);
+            PhotonNetwork.Instantiate("Monkey", new Vector3(-2.36664629f, -0.29087007f, 0), Quaternion.identity);
         }
         else
         {
