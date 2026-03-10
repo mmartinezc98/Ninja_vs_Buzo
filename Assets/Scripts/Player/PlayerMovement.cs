@@ -61,8 +61,8 @@ public class PlayerMovement : MonoBehaviour
             
 
             //animaciones
-            anim.SetFloat("Velocity X", Mathf.Abs(rb.velocity.x));
-            anim.SetFloat("Velocity Y", rb.velocity.y);
+            //anim.SetFloat("Velocity X", Mathf.Abs(rb.velocity.x));
+            //anim.SetFloat("Velocity Y", rb.velocity.y);
         }
     }
 }
